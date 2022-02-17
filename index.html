@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/devchallenges.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/"/>
+    <title>Checkout Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="CSS/index.css" />
+    <script src="https://kit.fontawesome.com/f51219bb95.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="wrapper flow">
+      <header class="header">
+        <h1 class="header__title"> Gucci Online Shop Checkout</h1>
+        <img src="Images/logo.jpg" alt="guccilogo" srcset="" height="200" width="200">
+      </header>
+
+      <main class="main">
+        <section class="products flow">
+          <article class="product">
+            <img
+              class="product__image"
+              src="/Images/guccibag.jpg"
+              alt="Gucci slingbag"
+            />
+            <div class="product__details">
+              <div>
+                <h3 class="product__title">Gucci Slingbag</h3>
+                <div class="price">
+                  <p class="price__after">$107.99</p>
+                  <s class="price__before">$197.99</s>
+                </div>
+              </div>
+              <div class="quantity">
+                <button class="quantity__btn decrease-qty1">-</button>
+                <p class="quantity__count count1">1</p>
+                <button class="quantity__btn increase-qty1">+</button>
+              </div>
+            </div>
+          </article>
+          <article class="product">
+            <img
+              class="product__image"
+              src="Images/guccishoes.jpg"
+              alt="Gucci shoes"
+            />
+            <div class="product__details">
+              <div>
+                <h3 class="product__title">Gucci Shoes</h3>
+                <div class="price">
+                  <p class="price__after">$129.99</p>
+                  <s class="price__before">$198.99</s>
+                </div>
+              </div>
+              <div class="quantity">
+                <button class="quantity__btn decrease-qty2">-</button>
+                <p class="quantity__count count2">1</p>
+                <button class="quantity__btn increase-qty2">+</button>
+              </div>
+            </div>
+          </article>
+
+          <div class="checkout-info">
+            <div class="checkout-info__content shipping">
+              <p class="checkout-info__title">Shipping</p>
+              <p class="checkout-info__amount">$20</p>
+            </div>
+
+            <div class="checkout-info__content total">
+              <p class="checkout-info__title">Total</p>
+              <p class="checkout-info__amount">$149.99</p>
+            </div>
+          </div>
+        </section>
+
+        <form class="forms flow" onsubmit="return false;">
+          <section class="form">
+            <h2 class="form__title">Contact information</h2>
+            <div class="form__group">
+              <label for="email">E-mail</label>
+              <i class="fas fa-envelope icon icon--left"></i>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email..."
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="phone">Phone</label>
+              <i class="fas fa-phone-alt icon icon--left"></i>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone..."
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                title="Match this example format 111-111-1111"
+                required
+              />
+            </div>
+          </section>
+          <section class="form">
+            <h2 class="form__title">Shipping address</h2>
+
+            <div class="form__group">
+              <label for="name">Full name</label>
+              <i class="fas fa-user-circle icon icon--left"></i>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Sharonne Vanessa"
+                required
+                minlength="2"
+              />
+            </div>
+            <div class="form__group">
+              <label for="address">Address</label>
+              <i class="fas fa-home icon icon--left"></i>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Your address..."
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="city">City</label>
+              <i class="fas fa-city icon icon--left"></i>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Your city..."
+                required
+              />
+            </div>
+
+            <div class="county-postcode">
+              <div class="form__group">
+                <label for="country-choice">Country</label>
+                <i class="fas fa-globe-africa icon icon--left"></i>
+                  <select id="country-choice" required>
+                    <option value="">Country...</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Uganda">Egypt</option>
+                    <option value="Tanzania">Tanzania</option></option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="Burundi">Burundi</option>
+                    <option value="Somalia">Madagascar</option>
+                    <option value="Ethiopia">South Africa</option>
+                    <option value="South Sudan">Morocco</option>
+                  </select>
+              </div>
+              <div class="form__group">
+                <label for="postal-code">Postal code</label>
+                <i class="fas fa-box icon icon--left"></i>
+                <input
+                  type="text"
+                  name="postal-code"
+                  id="postal-code"
+                  placeholder="Your postal code..."
+                  required
+                />
+              </div>
+            </div>
+          </section>
+
+          <div class="save-container">
+            <input type="checkbox" name="save" id="save-checkbox" />
+            <label for="save-checkbox"> Save your information </label>
+          </div>
+
+          <div class="btn-wrapper">
+            <button class="btn-continue" type="submit">Continue</button>
+          </div>
+        </form>
+      </main>
+
+      <footer class="footer">
+        <div class="footnote">
+          <p>Sharonne @ codechallenge. | Frontend Developer</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
