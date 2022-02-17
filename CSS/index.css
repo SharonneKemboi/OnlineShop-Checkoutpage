@@ -14,44 +14,27 @@
     font-family: 'Montserrat', sans-serif;
   }
   
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-  
-  html,
-  body,
-  h1,
-  h2,
-  h3,
-  p {
-    margin: 0;
-  }
   
   html {
     scroll-behavior: smooth;
+    margin: 0px;
   }
   
   body {
     line-height: 1.5;
     font-weight: 600;
-    color: var(--clr-very-dark-gray);
-    background-color: var(--clr-white);
+    color: #000000;
+    background-color: #f8f6f5;
   }
   
   img {
     max-width: 100%;
   }
   
-  .flow > * + * {
-    margin-top: 1.5rem;
-  }
-  
   .wrapper {
     padding: 2em 1em;
   }
-  
+  /*Mobile*/
   @media (min-width: 64em) {
     .wrapper {
       width: 85%;
