@@ -33,7 +33,7 @@ To view the website visit this link <>
 ## How To Use
 
 To clone you'll need [Git] installed on your computer. From your command line:
-# Clone this repository
+### Clone this repository
 $ git clone https://github.com/SharonneKemboi/OnlineShop-Checkoutpage.git
 
 ##Reference
