@@ -13,7 +13,7 @@
 
 This is a Gucci Online checkout page website. This website demonstrates the use of flex layout to display items on the page. The forms on this website contains minimum validations requirements. A custom alert is shown when the information on the form inputs is valid.
 
-To view the website visit this link <>
+To view the website visit this link <https://sharonnekemboi.github.io/OnlineShop-Checkoutpage/>
 
 ### Built With
 
